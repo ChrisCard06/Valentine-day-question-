@@ -1,40 +1,94 @@
-/* style.css */
-
 body {
-    font-family: Arial, sans-serif; /* Fallback font family */
-    text-align: center; /* Center-align text */
-    margin: 0; /* Remove default margin */
-    background-color: #FADADD; /* Set background color to light pink */
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff0f3, #ffe4ec);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
 }
 
-#container {
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center-align items horizontally */
-    justify-content: center; /* Center-align items vertically */
-    height: 100vh; /* Make the container full viewport height */
+.card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 25px;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border: 3px solid #ffd6e0;
 }
 
-#image-container {
-    /* This container will hold the images */
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.2rem;
+  color: #d6336c;
+  margin-bottom: 10px;
 }
 
-#question {
-    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the question */
-    font-size: 52px; /* Set font size for the question */
+#question-text {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.9rem;
+  color: #c2255c;
+  margin: 15px 0;
 }
 
-#options {
-    margin-top: 20px; /* Add space above the options */
+#sub-text {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.photo-frame {
+  width: 100%;
+  height: 260px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 15px 0;
+  border: 4px solid #ffc2d1;
+  background-image: url("photos/lily-frame.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
 }
 
 button {
-    padding: 10px 20px; /* Set padding for buttons */
-    margin: 0 10px; /* Set margin around buttons */
-    font-size: 26px; /* Set font size for buttons */
-    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the options */
-    background-color: #FB607F; /* Set button background color */
-    color: white; /* Set text color to white */
-    border: none; /* Remove button border */
-    cursor: pointer; /* Set cursor to pointer on hover */
+  font-size: 1.1rem;
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#yes-btn {
+  background-color: #d6336c;
+  color: white;
+}
+
+#no-btn {
+  background-color: #adb5bd;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+#response-text {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #c2255c;
 }
